@@ -105,20 +105,32 @@ banner .button {
   display: flex;
   flex-direction: column;
   max-width: 60%;
-  margin-right: 24px;
+  padding-right: 24px;
 }
 
 .information .highlights {
   display: flex;
   flex-direction: column;
   max-width: 40%;
+  margin-top: -16px;
+  margin-right: -24px;
 }
 
 .highlight {
   display: flex;
+  align-items: center;
 }
 
 .highlight .img-container {
   max-width: 35%;
   height: auto;
+  padding: 16px;
+}
+
+.highlight .text-container {
+  max-width: 65%;
+}
+
+#special-highlight {
+  background-color: lightgrey;
 }
