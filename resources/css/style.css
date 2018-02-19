@@ -134,3 +134,27 @@ banner .button {
 #special-highlight {
   background-color: lightgrey;
 }
+
+/*Courses section styles*/
+
+.courses-section {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 32px 72px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course .text-container {
+  background-color: white;
+}
