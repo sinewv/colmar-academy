@@ -160,3 +160,20 @@ banner .button {
 }
 
 /*Thesis section styles*/
+
+.thesis {
+  text-align: center;
+}
+
+/*Footer styles*/
+
+footer {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .links {
+  display: flex;
+}
