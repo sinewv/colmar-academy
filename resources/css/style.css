@@ -177,3 +177,89 @@ footer {
 footer .links {
   display: flex;
 }
+
+/*Media queries for mobile devices*/
+
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile li {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .mobile li img {
+    height: 50px;
+  }
+
+  banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 32px 0;
+  }
+
+  banner .img-container {
+    max-width: 100%;
+    position: center;
+  }
+
+  banner .text-container {
+    max-width: 100%;
+    margin-right: 24px;
+  }
+
+  .middle .information .main {
+    display: none;
+  }
+
+  .middle .information .highlights {
+    max-width: 100%;
+  }
+
+  .courses-section {
+    background-color: white;
+  }
+
+  .courses-section .img-container {
+    display: none;
+  }
+
+  .courses-section .text-container p {
+    display: none;
+  }
+
+  .courses-section .text-container span {
+    display: none;
+  }
+
+  .thesis .text-container {
+    display: none;
+  }
+
+  .thesis .main {
+    max-width: 100%;
+  }
+
+  .thesis .highlights {
+    display: none;
+  }
+
+  footer .links {
+    display: none;
+  }
+
+}
