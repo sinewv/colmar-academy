@@ -2,7 +2,7 @@
 
 html {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .container {
@@ -78,20 +78,20 @@ banner .text-container {
 banner h1 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 banner h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 banner .button {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 8px;
+  padding: 10px;
 }
 
 /*Information section styles*/
@@ -106,6 +106,16 @@ banner .button {
   flex-direction: column;
   max-width: 60%;
   padding-right: 24px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.information .main p {
+  padding-top: 24px;
 }
 
 .information .highlights {
@@ -131,6 +141,16 @@ banner .button {
   max-width: 65%;
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.highlight .text-container p {
+  padding-bottom: 8px;
+}
+
 #special-highlight {
   background-color: lightgrey;
 }
@@ -139,8 +159,11 @@ banner .button {
 
 .courses-section {
   background-color: lightgrey;
+  padding: 0 72px 32px 72px;
+}
+
+.courses-section h2 {
   text-align: center;
-  padding: 32px 72px;
 }
 
 .courses {
@@ -153,16 +176,38 @@ banner .button {
   width: 272px;
   display: flex;
   flex-direction: column;
+  margin-top: 32px;
 }
 
 .course .text-container {
+  padding: 16px 16px 24px 16px;
   background-color: white;
+}
+
+.course .text-container p {
+  padding: 8px 0;
+}
+
+#computer-art {
+  padding-bottom: 10px;
 }
 
 /*Thesis section styles*/
 
-.thesis {
+.thesis h2 {
   text-align: center;
+}
+
+.thesis .information .highlights {
+  margin-top: 0px;
+}
+
+.thesis h4 {
+  margin-top: 24px;
+}
+
+.thesis .main p {
+  padding-top: 8px;
 }
 
 /*Footer styles*/
@@ -176,6 +221,10 @@ footer {
 
 footer .links {
   display: flex;
+}
+
+footer .links span {
+  margin-left: 10px;
 }
 
 /*Media queries for mobile devices*/
@@ -215,6 +264,7 @@ footer .links {
   banner .img-container {
     max-width: 100%;
     position: center;
+    margin-bottom: 32px;
   }
 
   banner .text-container {
@@ -226,16 +276,63 @@ footer .links {
     display: none;
   }
 
+  .middle .information {
+    padding: 0;
+    display: block;
+    max-width: 100%;
+  }
+
   .middle .information .highlights {
     max-width: 100%;
+    margin: 16px 0;
+    justify-content: flex-start;
+  }
+
+  .highlight {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .highlight .img-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .highlight .text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #special-highlight {
+    background-color: white;
   }
 
   .courses-section {
     background-color: white;
+    padding: 0;
+  }
+
+  .courses-section h2 {
+    margin-bottom: 16px;
   }
 
   .courses-section .img-container {
     display: none;
+  }
+
+  .courses-section .text-container {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #computer-art {
+    padding-bottom: 8px;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0;
   }
 
   .courses-section .text-container p {
@@ -246,12 +343,20 @@ footer .links {
     display: none;
   }
 
+  .courses-section h4 {
+    font-size: 24px;
+    background-color: lightgrey;
+    padding: 20px 0;
+    text-align: center;
+  }
+
   .thesis .text-container {
     display: none;
   }
 
   .thesis .main {
     max-width: 100%;
+    padding-right: 0;
   }
 
   .thesis .highlights {
