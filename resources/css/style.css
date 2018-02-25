@@ -1,8 +1,12 @@
 /*General styles*/
 
 html {
-  font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+}
+
+p {
+  line-height: 20px;
 }
 
 .container {
@@ -39,6 +43,7 @@ header {
 }
 
 .logo span {
+  font-family: Helvetica;
   font-size: 32px;
 }
 
@@ -52,6 +57,10 @@ nav ul {
   font-size: 20px;
 }
 
+.desktop a:hover {
+  color: #3973ac;
+}
+
 .mobile {
   display: none;
 }
@@ -59,7 +68,7 @@ nav ul {
 /*Banner styles*/
 
 banner {
-  background-color: lightgrey;
+  background-color: #79a6d2;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -71,14 +80,17 @@ banner .img-container {
 }
 
 banner .text-container {
-  margin-left: 24px;
+  margin-left: 40px;
   max-width: 30%;
 }
 
 banner h1 {
-  font-size: 32px;
+  font-size: 50px;
+  color: #ff6600;
+  text-shadow: 2px 2px #000000;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 banner h3 {
@@ -92,6 +104,11 @@ banner .button {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+banner .button:hover {
+  background-color: #ff6600;
+  color: black;
 }
 
 /*Information section styles*/
@@ -109,7 +126,7 @@ banner .button {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   padding-top: 32px;
 }
@@ -151,14 +168,22 @@ h4 {
   padding-bottom: 8px;
 }
 
+.highlight a:hover {
+  color: #3973ac;
+}
+
 #special-highlight {
-  background-color: lightgrey;
+  background-color: #79a6d2;
+}
+
+#special-highlight a:hover {
+  color: #ff6600;
 }
 
 /*Courses section styles*/
 
 .courses-section {
-  background-color: lightgrey;
+  background-color: #79a6d2;
   padding: 0 72px 32px 72px;
 }
 
@@ -225,6 +250,10 @@ footer .links {
 
 footer .links span {
   margin-left: 10px;
+}
+
+footer .links a:hover {
+  color: #3973ac;
 }
 
 /*Media queries for mobile devices*/
@@ -308,6 +337,10 @@ footer .links span {
     background-color: white;
   }
 
+  #special-highlight a:hover {
+    color: #3973ac;
+  }
+
   .courses-section {
     background-color: white;
     padding: 0;
@@ -345,9 +378,13 @@ footer .links span {
 
   .courses-section h4 {
     font-size: 24px;
-    background-color: lightgrey;
+    background-color: #79a6d2;
     padding: 20px 0;
     text-align: center;
+  }
+
+  .courses-section h4:hover {
+    background-color: #ff6600;
   }
 
   .thesis .text-container {
